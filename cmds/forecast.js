@@ -4,6 +4,7 @@ module.exports = async args => {
     try {
         const location = args.location || args.l;
         const weather = await forecast(location);
+        console.log(weather)
         console.log(`Forecast for the next 7 days in ${location}:`)
         console.log('')
         console.log('')
