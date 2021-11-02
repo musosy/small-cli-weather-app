@@ -6,6 +6,8 @@ const menus = {
         forecast ........... show 10-day weather forecast
         version ............ show package version
         help ............... show help menu for a command
+
+        run "outside [command] -h" for more details about a command
     `,
     today: `
         outside today <options>
