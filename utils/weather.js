@@ -18,7 +18,6 @@ module.exports = {
     forecast: async location => {
         const result = await geoloc(location);
         const weather = await axios(`https://api.open-meteo.com/v1/forecast?latitude=${result.lat}&longitude=${result.lng}&daily=weathercode,apparent_temperature_max,apparent_temperature_min,sunrise,sunset,precipitation_sum,precipitation_hours&timezone=Europe%2FParis`)
-        console.log(weather.data)
         return weather.data;
     }
 }
