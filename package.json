@@ -1,13 +1,17 @@
 {
   "name": "outside-cli",
   "version": "1.0.0",
-  "description": "",
+  "description": "A CLI app that gives you the weather forecast",
   "main": "index.js",
   "bin": {
     "outside": "bin/outside"
   },
+  "homepage": "https://github.com/musosy/small-cli-weather-app#readme",
   "scripts": {},
-  "keywords": [],
+  "keywords": [
+    "weather",
+    "forecast"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {

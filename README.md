@@ -6,7 +6,7 @@ npm install
 
 Then to use the command globally
 ```bash
-npm i -g cli-node
+npm i -g outside-cli
 ```
 
 To have info about the use of the command
