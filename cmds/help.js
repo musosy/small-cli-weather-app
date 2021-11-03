@@ -13,11 +13,17 @@ const menus = {
         outside today <options>
 
         --location, -l ..... the location to use
+
+        You can just run "outside today" for the 
+        weather of your current location.
     `,
     forecast: `
         outside forecast <options>
 
         --location, -l ..... the location to use
+
+        You can just run "outside forecast" for the 
+        forecast of your current location.
     `,
 }
 

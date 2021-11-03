@@ -3,9 +3,9 @@ const weatherInterpretationCodes = require('../utils/weatherInterpretationCodes'
 module.exports = async args => {
     console.log(args)
     try {
-        const location = args.location || args.l || args._[1];
+        const location = args.location || args.l;
         const weather = await forecast(location);
-        console.log(`Forecast for the next 7 days in ${location}:`)
+        console.log(`Forecast for the next 7 days in ${weather.city}:`)
         console.log('')
         console.log('')
         for (let i = 0; i < weather.daily.time.length; i++) {
