@@ -7,7 +7,7 @@ module.exports = async args => {
         let location = args.location || args.l || await ipLocation();
         const weather = await today(location);
         console.log(`Current conditions in ${weather.city}:`)
-        console.log(`\t${weather.current_weather.temperature} °C and ${weatherInterpretationCodes[weather.current_weather.weathercode].toLowerCase()}`)
+        console.log(`${weather.current_weather.temperature} °C and ${weatherInterpretationCodes[weather.current_weather.weathercode].toLowerCase()}`)
     } catch (err) {
         console.log(err)
     }
