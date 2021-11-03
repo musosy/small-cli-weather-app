@@ -1,9 +1,10 @@
 const { forecast } = require('../utils/weather');
 const weatherInterpretationCodes = require('../utils/weatherInterpretationCodes');
+const ipLocation = require('../utils/location')
+
 module.exports = async args => {
-    console.log(args)
     try {
-        const location = args.location || args.l;
+        const location = args.location || args.l || await ipLocation();
         const weather = await forecast(location);
         console.log(`Forecast for the next 7 days in ${weather.city}:`)
         console.log('')
