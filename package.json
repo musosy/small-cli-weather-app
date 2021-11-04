@@ -16,6 +16,9 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.24.0",
+    "chalk": "^4.1.2",
+    "clui": "^0.3.6",
+    "console-table-printer": "^2.10.0",
     "minimist": "^1.2.5"
   }
 }
