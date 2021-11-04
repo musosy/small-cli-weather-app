@@ -1,7 +1,17 @@
 const minimist = require('minimist');
+const figlet = require('figlet')
 const error = require('./utils/error');
 
 module.exports = () => {
+    console.clear()
+    figlet("WEATHER FORECAST", (err, data) => {
+        if (err) {
+            console.error('Something went wrong');
+            console.dir(err)
+            return
+        }
+        console.log(data)
+    })
     const args = minimist(process.argv.slice(2));
     let cmd = args._[0] || 'help';
     if (args.version || args.v) cmd = 'version';

@@ -33,6 +33,7 @@ module.exports = async args => {
         wait.stop()
         console.log(`Forecast for the next 7 days in ${chalk.bold.blue(weather.city)}:`)
         table.printTable()
+        console.log()
     } catch (err) {
         wait.stop();
         console.log(err)

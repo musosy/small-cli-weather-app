@@ -14,6 +14,7 @@ module.exports = async args => {
         wait.stop()
         console.log(`Current conditions in ${chalk.bold.blue(weather.city)}:`)
         console.log(`${chalk.green(weather.current_weather.temperature + " °C")}  and ${weatherInterpretationCodes[weather.current_weather.weathercode].toLowerCase()}`)
+        console.log()
     } catch (err) {
         wait.stop()
         console.log(err)
